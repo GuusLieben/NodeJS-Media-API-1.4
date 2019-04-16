@@ -1,24 +1,37 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>Welcome to Apache!</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
+    <title>Welcome to Node.js!</title>
+    <style>
+        body {
+            width: 35em;
+            margin: 0 auto;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
 <h1>Welcome to Node.js!</h1>
 <p>If you see this page, the Node.js® Express server is successfully installed and
-working.</p>
+    working.</p>
 
 <p>The source code for this project is available at
-<a href="https://gitlab.com/guuslieben/nodejs-avans-1.4">Guus / NodeJS Avans 1.4 · GitLab</a>.</p>
+    <a href="https://gitlab.com/guuslieben/nodejs-avans-1.4">Guus / NodeJS Avans 1.4 · GitLab</a>.</p>
 
-<p><em>Primary packages : <a href="https://www.npmjs.com/package/nodemon">Nodemon</a>, <a href="https://expressjs.com/">Express</a></em></p>
+<p>
+<h3><b>Usage : </b></h3>
+<ul>
+    <li>[GET] /users : Returns JSON Array containing all existing users</li>
+    <li>[GET] /users/$id : Returns information about a given user</li>
+    <li>[GET] /users/random : Returns information about a random user</li>
+    <li>[PUT] /user : Placeholder for writing new users</li>
+    <li>[DELETE] /user : Placeholder for deleting users</li>
+</ul>
+</p>
+
+<p><em>Primary packages : <a href="https://www.npmjs.com/package/nodemon">Nodemon</a> (Development), <a
+        href="https://expressjs.com/">Express</a> (Routing)</em>
+</p>
+
 </body>
 </html>
