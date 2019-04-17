@@ -36,12 +36,12 @@ function movie_app() {
     app.get(store.movie_single_suffix, (req, res) => sendJson(req, res, getMovieObj(req.params.movieId)));
 
     // GET handler for all movies
-    app.get(store.movies_suffix, (req, res) => sendJson(req, res, store.movies, null, 2));
+    app.get(store.movies_suffix, (req, res) => sendJson(req, res, store.movies));
 
     // DELETE handler for specific movie
     app.delete(store.movie_single_suffix, (req, res) => {
         for (let i = 0; i < store.movies.length; i++) {
-            if (store.movies[i].id == req.params.movieId) {
+            if (store.movies[i].id == req.params.movieId) { // Intentional possibility of type coercion (number <> string)
                 console.log('Removing : ', store.movies[i]);
                 store.movies.splice(i, 1);
                 sendJson(req, res, '{result: true}');
@@ -59,7 +59,8 @@ function start_app() {
 
     // Handle 404's
     app.use((req, res) => {
-        console.log('User [', req.headers['x-forwarded-for'] || req.connection.remoteAddress, '] attempted to connect to ', req.originalUrl, ' and was sent 404 Not Found');
+        console.log('User [', req.headers['x-forwarded-for'] || req.connection.remoteAddress,
+            '] attempted to connect to ', req.originalUrl, ' and was sent 404 Not Found');
         res.status(404).send('This page is as non-existent as my life.');
     });
 
@@ -84,11 +85,10 @@ function getMovieObj(id) {
     return getObjectFromArray(id, arr);
 }
 
-// Find object from given array, return blank JSON if non-existent
+// Find object from given array, returns blank array if non-existent
 function getObjectFromArray(id, arr) {
     console.log('Searching for object with id ', id, ' in a list of ', arr.length, ' objects');
-    for (let i = 0; i < arr.length; i++) if (arr[i].id == id) return arr[i]; // Intentional possibility of type coercion (number <> string)
-    return '{}';
+    return arr.filter(obj => obj.id == id); // Intentional possibility of type coercion (number <> string)
 }
 
 // Respond with a JSON element, log client

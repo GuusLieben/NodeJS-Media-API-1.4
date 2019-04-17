@@ -33,8 +33,8 @@ module.exports.User = function User(name, street, postcode, birthdate, phone, em
 // Movie Array
 const movies = [];
 // Populate array with two sample movies
-movies.push(new Movie('Batman', 'You know what this is', 2015, 'Bob Bobberson'));
-movies.push(new Movie('Niet Batman', 'Don\'t watch this at school', 2019, 'Guus Lieben'));
+movies.push(new module.exports.Movie('Batman', 'You know what this is', 2015, 'Bob Bobberson'));
+movies.push(new module.exports.Movie('Niet Batman', 'Don\'t watch this at school', 2019, 'Guus Lieben'));
 // Export movie array
 module.exports.movies = movies;
 
@@ -42,7 +42,7 @@ module.exports.movies = movies;
 const users = [];
 // Populate array with two sample users
 users.push(
-    new User(
+    new module.exports.User(
         'Guus Lieben',
         'Arjan-straat 420',
         '1234 AB',
@@ -51,7 +51,7 @@ users.push(
         'guus@xendox.com',
         'hahahaNee123'));
 users.push(
-    new User(
+    new module.exports.User(
         'Bob Bobberson',
         'Bob-Willem Straat 12',
         '6969 OI',
