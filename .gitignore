@@ -1,1 +1,4 @@
 node_modules
+sonarlint
+eclipseCodeFormatter.xml
+google-java-format.xml

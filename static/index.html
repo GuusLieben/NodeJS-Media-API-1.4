@@ -8,6 +8,14 @@
             margin: 0 auto;
             font-family: Tahoma, Verdana, Arial, sans-serif;
         }
+        li::before {
+            content: '→ ';
+            padding-right: 10px;
+        }
+        li {
+            margin-left: -25px;
+            list-style: none;
+        }
     </style>
 </head>
 <body>
@@ -21,11 +29,13 @@
 <p>
 <h3><b>Usage : </b></h3>
 <ul>
-    <li>[GET] /users : Returns JSON Array containing all existing users</li>
-    <li>[GET] /users/$id : Returns information about a given user</li>
-    <li>[GET] /users/random : Returns information about a random user</li>
-    <li>[PUT] /user : Placeholder for writing new users</li>
-    <li>[DELETE] /user : Placeholder for deleting users</li>
+    <li><b style="color: darkslateblue;">[GET]</b>&ensp;<a href="/users">/users</a> : Returns JSON Array containing all existing users</li>
+    <li><b style="color: darkslateblue;">[GET]</b>&ensp;<u style="color: darkred;">/users/:userId</u> : Returns information about a given user</li>
+    <li><b style="color: darkslateblue;">[GET]</b>&ensp;<a href="/users/random">/users/random</a> : Returns information about a random user</li>
+    <li><b style="color: darkslateblue;">[GET]</b>&ensp;<a href="/movies">/movies</a> : Returns JSON Array containing all existing movies</li>
+    <li><b style="color: darkslateblue;">[GET]</b>&ensp;<u style="color: darkred;">/movies/:movieId</u> : Returns information about a given movie</li>
+    <li><b style="color: mediumseagreen;">[PUT]</b>&ensp;<u style="color: darkred;">/user</u> : Placeholder for writing new users</li>
+    <li><b style="color: indianred;">[DELETE]</b>&ensp;<u style="color: darkred;">/user</u> : Placeholder for deleting users</li>
 </ul>
 </p>
 
