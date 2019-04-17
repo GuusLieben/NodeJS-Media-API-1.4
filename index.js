@@ -70,21 +70,24 @@ function start_app() {
     });
 }
 
-// Find User object from user storage, return blank JSON if non-existent
+// Get User object from stored users
 function getUserObj(id) {
-    const list = store.users;
-    for (let i = 0; i < list.length; i++)
-        if (list[i].id == id)
-            return list[i];
-    return '{}';
+    const arr = store.users;
+    console.log('Searching for user ..');
+    return getObjectFromArray(id, arr);
 }
 
-// Find Movie object from movie storage, return blank JSON if non-existent
+// Get Movie object from stored movies
 function getMovieObj(id) {
-    const list = store.movies;
-    for (let i = 0; i < list.length; i++)
-        if (list[i].id == id)
-            return list[i];
+    const arr = store.movies;
+    console.log('Searching for movie ..');
+    return getObjectFromArray(id, arr);
+}
+
+// Find object from given array, return blank JSON if non-existent
+function getObjectFromArray(id, arr) {
+    console.log('Searching for object with id ', id, ' in a list of ', arr.length, ' objects');
+    for (let i = 0; i < arr.length; i++) if (arr[i].id == id) return arr[i]; // Intentional possibility of type coercion (number <> string)
     return '{}';
 }
 
