@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 const store = require('./sources/store');
+const favicon = require('serve-favicon');
 const logger = require('tracer').console({
     transport: function (data) {
         console.log(data.output);
@@ -32,6 +33,7 @@ function user_app() {
 
     // POST handler for new user
     app.post(store.user_suffix, (req, res) => {
+        logger.debug('New User POST');
         const b = req.query;
         let user = new store.User(b.name, b.street, b.postcode, b.birthdate, b.phone, b.email, b.password);
         store.users.push(user);
@@ -64,6 +66,9 @@ function movie_app() {
 
 // Default behavior settings of the app
 function start_app() {
+    // Favicon
+    app.use(favicon('favicon.ico'));
+
     // Serve the static page defined in /static, served on /
     app.use(express.static('static'));
 

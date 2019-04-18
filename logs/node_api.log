@@ -1,1 +1,99 @@
 2019-04-17T20:04:15+0000 <log> index.js:114 (Server.app.listen) App successfully started on / on port 82!
+2019-04-17T20:04:57+0000 <log> index.js:114 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T06:45:14+0000 <log> index.js:114 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T06:47:01+0000 <debug> index.js:72 (app.use) User [ ::ffff:145.129.109.228 ] attempted to connect to  /favicon.ico  and was sent 404 Not Found
+2019-04-18T06:47:13+0000 <log> index.js:107 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T06:47:29+0000 <log> index.js:107 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T06:47:33+0000 <log> index.js:107 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T06:47:42+0000 <log> index.js:114 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T06:47:46+0000 <log> index.js:114 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T06:47:47+0000 <debug> index.js:72 (app.use) User [ ::ffff:145.49.24.91 ] attempted to connect to  /users  and was sent 404 Not Found
+2019-04-18T06:47:53+0000 <debug> index.js:72 (app.use) User [ ::ffff:145.49.24.91 ] attempted to connect to  /api/users  and was sent 404 Not Found
+2019-04-18T06:48:01+0000 <debug> index.js:72 (app.use) User [ ::ffff:145.49.24.91 ] attempted to connect to  /api/users  and was sent 404 Not Found
+2019-04-18T06:48:20+0000 <log> index.js:107 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T06:53:03+0000 <log> index.js:114 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T06:56:15+0000 <debug> index.js:72 (app.use) User [ undefined ] attempted to connect to  /favicon.ico  and was sent 404 Not Found
+2019-04-18T06:56:21+0000 <debug> index.js:72 (app.use) User [ ::ffff:145.49.24.91 ] attempted to connect to  /allahuakbar  and was sent 404 Not Found
+2019-04-18T06:59:21+0000 <log> index.js:114 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T06:59:31+0000 <debug> index.js:72 (app.use) User [ ::ffff:145.129.109.228 ] attempted to connect to  /favicon.ico  and was sent 404 Not Found
+2019-04-18T07:01:50+0000 <log> index.js:117 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:02:12+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:02:30+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:06:27+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:06:45+0000 <log> index.js:111 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:07:19+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:07:58+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:08:10+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:13:10+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:14:00+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:14:16+0000 <log> index.js:111 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:14:27+0000 <log> index.js:111 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:15:51+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:17:09+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:18:55+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:20:59+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:21:35+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:22:09+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:22:48+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:23:14+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:23:34+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:24:19+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:27:28+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:28:14+0000 <log> index.js:118 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:28:18+0000 <log> index.js:111 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:28:51+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:29:02+0000 <debug> index.js:36 (app.post) New User POST
+2019-04-18T07:30:08+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:31:04+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:31:34+0000 <debug> index.js:36 (app.post) New User POST
+2019-04-18T07:32:03+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:32:29+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:32:30+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:34:55+0000 <debug> index.js:36 (app.post) New User POST
+2019-04-18T07:34:55+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:35:00+0000 <debug> index.js:36 (app.post) New User POST
+2019-04-18T07:35:00+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:35:10+0000 <debug> index.js:36 (app.post) New User POST
+2019-04-18T07:38:00+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:38:17+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:39:21+0000 <debug> index.js:36 (app.post) New User POST
+2019-04-18T07:39:21+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:39:23+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:39:49+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:39:55+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:40:07+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:40:10+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:40:12+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:40:16+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:40:18+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:40:27+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:40:56+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:41:00+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:41:01+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:41:21+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:41:24+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:41:42+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:41:43+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:41:44+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:41:51+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:41:52+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:41:56+0000 <debug> index.js:36 (app.post) New User POST
+2019-04-18T07:41:56+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:41:58+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:42:11+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T07:42:12+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:42:25+0000 <debug> index.js:77 (app.use) User [ ::ffff:145.129.109.228 ] attempted to connect to  /api/register/3  and was sent 404 Not Found
+2019-04-18T07:43:40+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:43:46+0000 <warn> index.js:57 (app.delete) Removing :  Movie {
+  title: 'Niet Batman',
+  description: 'Don\'t watch this at school',
+  release: 2019,
+  director: 'Guus Lieben',
+  id: 2 }
+2019-04-18T07:43:46+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:44:14+0000 <debug> index.js:36 (app.post) New User POST
+2019-04-18T07:44:14+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:44:16+0000 <debug> index.js:36 (app.post) New User POST
+2019-04-18T07:44:16+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:44:18+0000 <log> index.js:112 (sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T07:44:26+0000 <log> index.js:119 (Server.app.listen) App successfully started on / on port 82!
