@@ -17,29 +17,32 @@ var config = {
 };
 const connection = new Connection(config);
 
-function executeStatement(statement) {
+function executeStatement(statement, func) {
     connection.on('connect', (err) => {
         if (err) {
             console.log(err);
         } else {
             console.log(' == Connected == ');
-            handleStatement(statement);
+            handleStatement(statement, func);
         }
     });
 }
 
-function handleStatement(statement) {
-    request = new Request(statement, (err) => {
+function handleStatement(statement, func) {
+    let request = new Request(statement, (err) => {
         if (err) console.log(err)
     });
 
     request.on('row', (columns) => {
-        console.log('\n > New Entry :');
-        columns.forEach((column) => {
-            console.log(column.metadata.colName + ' : ' + column.value);
-        });
+        console.log('\n > New Entry => Executing task');
+        func(columns);
     });
+
+    request.on('requestCompleted', function () {
+        return true;
+    });
+
     connection.execSql(request);
 }
 
-executeStatement('select * from Users');
+module.exports.executeStatement = executeStatement;

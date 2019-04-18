@@ -2,7 +2,11 @@
 const express = require('express');
 const app = express();
 const store = require('./sources/store');
+module.exports.store = store;
+const movie_routes = require('./sources/movie.routes');
+const user_routes = require('./sources/user.routes');
 const favicon = require('serve-favicon');
+const tedious = require('./sources/tedious');
 const logger = require('tracer').console({
     transport: function (data) {
         console.log(data.output);
@@ -13,63 +17,20 @@ const logger = require('tracer').console({
         ;
     }
 });
+module.exports.logger = logger;
 
 // Settings
 const port = 82;
 
-// GET, POST handlers for Users
-function user_app() {
-
-    // GET handler for specific User
-    app.get(store.user_single_suffix, (req, res) => {
-        const random = Math.floor(Math.random() * (store.users.length)) + 1;
-        let id = req.params.userId === 'random' ? random.toString() : req.params.userId;
-        sendJson(req, res, getUserObj(id));
-    });
-
-    // GET handler for all users
-    app.get(store.user_suffix, (req, res) =>
-        sendJson(req, res, store.users));
-
-    // POST handler for new user
-    app.post(store.user_suffix, (req, res) => {
-        logger.debug('New User POST');
-        const b = req.query;
-        let user = new store.User(b.name, b.street, b.postcode, b.birthdate, b.phone, b.email, b.password);
-        store.users.push(user);
-        sendJson(req, res, user);
-    });
-}
-
-// GET, DELETE handlers for Movies
-function movie_app() {
-
-    // GET handler for specific movie
-    app.get(store.movie_single_suffix, (req, res) => sendJson(req, res, getMovieObj(req.params.movieId)));
-
-    // GET handler for all movies
-    app.get(store.movies_suffix, (req, res) => sendJson(req, res, store.movies));
-
-    // DELETE handler for specific movie
-    app.delete(store.movie_single_suffix, (req, res) => {
-        for (let i = 0; i < store.movies.length; i++) {
-            if (store.movies[i].id == req.params.movieId) { // Intentional possibility of type coercion (number <> string)
-                logger.warn('Removing : ', store.movies[i]);
-                store.movies.splice(i, 1);
-                sendJson(req, res, '{result: true}');
-                return;
-            }
-        }
-        sendJson(req, res, '{result: false};');
-    });
-}
+// Start the app
+user_routes(app), movie_routes(app), start_app();
+app.listen(port, () => logger.log(`App successfully started on ${app.mountpath} on port ${port}!`));
 
 // Default behavior settings of the app
 function start_app() {
-    // Favicon
+    app.all('*', (req, res, next) => {
+    });
     app.use(favicon('favicon.ico'));
-
-    // Serve the static page defined in /static, served on /
     app.use(express.static('static'));
 
     // Handle 404's -> Not found
@@ -84,21 +45,49 @@ function start_app() {
         logger.error(err.stack);
         res.status(500).send('This is as broken as my will to live.');
     });
+
+    collectSQLServerData();
+}
+
+async function collectSQLServerData() {
+    await tedious.executeStatement('select null, null, null, null, * from Users union select [title], [description], [release_year], [director], null, null, null, null, null, null, null, null from Movies;', (columns) => {
+        if (columns[4].value !== null) {
+            logger.debug('Constructing User object');
+            let name = columns[4].value;
+            let street = columns[5].value;
+            let postal = columns[6].value;
+            let city = columns[7].value;
+            let bv = columns[8].value;
+            let birthdate = bv.getDate() + '/' + bv.getUTCMonth() + '/' + bv.getFullYear();
+            let phone = columns[9].value;
+            let email = columns[10].value;
+            let password = columns[11].value;
+            store.users.push(new store.User(name, street, city, postal, birthdate, phone, email, password));
+
+        } else {
+            logger.debug('Constructing Movie object');
+            let title = columns[0].value;
+            let description = columns[1].value;
+            let release_year = columns[2].value;
+            let director = columns[3].value;
+            store.movies.push(new store.Movie(title, description, release_year, director));
+        }
+    });
 }
 
 // Get User object from stored users
-function getUserObj(id) {
+module.exports.getUserObj = (id) => {
     const arr = store.users;
     logger.debug('Searching for user ..');
     return getObjectFromArray(id, arr);
-}
+};
 
 // Get Movie object from stored movies
-function getMovieObj(id) {
+module.exports.getMovieObj = (id) => {
     const arr = store.movies;
     logger.debug('Searching for movie ..');
     return getObjectFromArray(id, arr);
-}
+};
 
 // Find object from given array, returns blank array if non-existent
 function getObjectFromArray(id, arr) {
@@ -107,13 +96,9 @@ function getObjectFromArray(id, arr) {
 }
 
 // Respond with a JSON element, log client
-function sendJson(req, res, msg) {
+module.exports.sendJson = (req, res, msg) => {
     let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     logger.log('Returning to client at ', ip);
     res.set('Content-Type', 'text/json');
     res.json(msg);
-}
-
-// Start the app
-user_app(), movie_app(), start_app();
-app.listen(port, () => logger.log(`App successfully started on ${app.mountpath} on port ${port}!`));
+};
