@@ -28,8 +28,6 @@ app.listen(port, () => logger.log(`App successfully started on ${app.mountpath} 
 
 // Default behavior settings of the app
 function start_app() {
-    app.all('*', (req, res, next) => {
-    });
     app.use(favicon('favicon.ico'));
     app.use(express.static('static'));
 
@@ -45,42 +43,7 @@ function start_app() {
         logger.error(err.stack);
         res.status(500).send('This is as broken as my will to live.');
     });
-
-    collectSQLServerData();
 }
-
-async function collectSQLServerData() {
-    await tedious.executeStatement('select null, null, null, null, * from Users union select [title], [description], [release_year], [director], null, null, null, null, null, null, null, null from Movies;', (columns) => {
-        if (columns[4].value !== null) {
-            logger.debug('Constructing User object');
-            let name = columns[4].value;
-            let street = columns[5].value;
-            let postal = columns[6].value;
-            let city = columns[7].value;
-            let bv = columns[8].value;
-            let birthdate = bv.getDate() + '/' + bv.getUTCMonth() + '/' + bv.getFullYear();
-            let phone = columns[9].value;
-            let email = columns[10].value;
-            let password = columns[11].value;
-            store.users.push(new store.User(name, street, city, postal, birthdate, phone, email, password));
-
-        } else {
-            logger.debug('Constructing Movie object');
-            let title = columns[0].value;
-            let description = columns[1].value;
-            let release_year = columns[2].value;
-            let director = columns[3].value;
-            store.movies.push(new store.Movie(title, description, release_year, director));
-        }
-    });
-}
-
-// Get User object from stored users
-module.exports.getUserObj = (id) => {
-    const arr = store.users;
-    logger.debug('Searching for user ..');
-    return getObjectFromArray(id, arr);
-};
 
 // Get Movie object from stored movies
 module.exports.getMovieObj = (id) => {

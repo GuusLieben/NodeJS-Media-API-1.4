@@ -27,25 +27,25 @@ module.exports.Movie = function Movie(title, descr, release, director) {
 };
 
 // User object constructor, exported
-module.exports.User = function User(name, street, city, postcode, birthdate, phone, email, password) {
+module.exports.User = function User(name, street, city, postcode, birthdate, phone, email, password, id) {
     if (!(/^[a-zA-Z ]+$/.test(name))) throw 'Invalid name';
     this.name = name;
 
     if (!(/^[-a-zA-Z0-9 ]+$/.test(street))) throw 'Invalid street';
     this.street = street;
 
-    if (!(/^[a-zA-Z ]+$/.test(city))) throw 'Invalid city';
-    this.city = city
+    // if (!(/^[a-zA-Z ]+$/.test(city))) throw 'Invalid city';
+    this.city = city;
 
     // 1111AB || 1111 AB
-    if (!(/^\d{4} ?[a-z]{2}$/i.test(postcode))) throw 'Invalid postal code';
+    // if (!(/^\d{4}?[A-Z]{2}$/i.test(postcode))) throw 'Invalid postal code';
     this.postcode = postcode;
 
     // dd/mm/yyyy
-    if (!(/^([0-2]{0,1}[0-9]|(3)[0-1])(\/)(([0-9])|((0)[0-9])|((1)[0-2]))(\/)\d{3,4}$/.test(birthdate))) throw 'Invalid birth date';
+    // if (!(/^([0-2]{0,1}[0-9]|(3)[0-1])(\/)(([0-9])|((0)[0-9])|((1)[0-2]))(\/)\d{3,4}$/.test(birthdate))) throw 'Invalid birth date';
     this.birthdate = birthdate;
 
-    if (!(/^((\+|00(\s|\s?\-\s?)?)31(\s|\s?\-\s?)?(\(0\)[\-\s]?)?|0)[1-9]((\s|\s?\-\s?)?[0-9])((\s|\s?-\s?)?[0-9])((\s|\s?-\s?)?[0-9])\s?[0-9]\s?[0-9]\s?[0-9]\s?[0-9]\s?[0-9]$/.test(phone))) throw 'Invalid phone';
+    // if (!(/^((\+|00(\s|\s?\-\s?)?)31(\s|\s?\-\s?)?(\(0\)[\-\s]?)?|0)[1-9]((\s|\s?\-\s?)?[0-9])((\s|\s?-\s?)?[0-9])((\s|\s?-\s?)?[0-9])\s?[0-9]\s?[0-9]\s?[0-9]\s?[0-9]\s?[0-9]$/.test(phone))) throw 'Invalid phone';
     this.phone = phone.replace('\+', '00');
 
     if (!(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(email))) throw 'Invalid email';
@@ -54,15 +54,10 @@ module.exports.User = function User(name, street, city, postcode, birthdate, pho
     if (password == null || password.length === 0) throw 'Invalid password';
     this.password = password;
 
-    this.id = users.length + 1;
+    this.id = id;
 };
 
 // Movie Array
 const movies = [];
 // Export movie array
 module.exports.movies = movies;
-
-// User Array
-const users = [];
-// Export user array
-module.exports.users = users;

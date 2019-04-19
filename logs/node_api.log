@@ -241,3 +241,152 @@
 2019-04-18T10:13:24+0000 <debug> index.js:55 (tedious.executeStatement) Constructing User object
 2019-04-18T10:13:24+0000 <debug> index.js:68 (tedious.executeStatement) Constructing Movie object
 2019-04-18T10:13:24+0000 <debug> index.js:68 (tedious.executeStatement) Constructing Movie object
+2019-04-18T20:26:07+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:26:07+0000 <debug> index.js:55 (tedious.executeStatement) Constructing User object
+2019-04-18T20:26:07+0000 <debug> index.js:55 (tedious.executeStatement) Constructing User object
+2019-04-18T20:26:07+0000 <debug> index.js:68 (tedious.executeStatement) Constructing Movie object
+2019-04-18T20:26:07+0000 <debug> index.js:68 (tedious.executeStatement) Constructing Movie object
+2019-04-18T20:27:14+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:27:14+0000 <debug> index.js:55 (tedious.executeStatement) Constructing User object
+2019-04-18T20:27:14+0000 <debug> index.js:55 (tedious.executeStatement) Constructing User object
+2019-04-18T20:27:14+0000 <debug> index.js:68 (tedious.executeStatement) Constructing Movie object
+2019-04-18T20:27:14+0000 <debug> index.js:68 (tedious.executeStatement) Constructing Movie object
+2019-04-18T20:27:20+0000 <debug> index.js:88 (Object.module.exports.getMovieObj) Searching for movie ..
+2019-04-18T20:27:20+0000 <debug> index.js:94 (getObjectFromArray) Searching for object with id  2  in a list of  2  objects
+2019-04-18T20:27:20+0000 <log> index.js:101 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T20:30:50+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:31:53+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:33:26+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:33:37+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:34:04+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:34:23+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:34:23+0000 <log> index.js:101 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T20:35:38+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:35:42+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:35:42+0000 <log> index.js:101 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T20:36:00+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:36:05+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:36:05+0000 <log> index.js:101 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T20:36:18+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:36:20+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:36:35+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:36:40+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:36:43+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:37:15+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:37:18+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:37:52+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:37:56+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:38:20+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:38:22+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:38:47+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:38:48+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:39:14+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:39:17+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:41:05+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:41:08+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:41:08+0000 <log> index.js:101 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T20:41:22+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:41:22+0000 <log> index.js:101 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-18T20:41:35+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:42:46+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-18T20:42:50+0000 <debug> user.routes.js:22 (app.post) New User POST
+2019-04-18T20:43:19+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T08:57:55+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:00:17+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:01:21+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:01:25+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:01:32+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:04:29+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:04:31+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:04:51+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:04:52+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:04:59+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:05:00+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:05:24+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:05:26+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:06:11+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:06:13+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:06:27+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:06:29+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:07:04+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:07:06+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:07:16+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:07:17+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:07:25+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:07:26+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:07:28+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:08:12+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:08:35+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:08:35+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:10:03+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:10:05+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:10:43+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:10:46+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:11:12+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:11:56+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:11:56+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:12:55+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:12:55+0000 <debug> user.routes.js:35 (app.get) Collected data from MSSQL
+2019-04-19T09:12:55+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:13:13+0000 <debug> index.js:79 (Object.module.exports.getUserObj) Searching for user ..
+2019-04-19T09:13:13+0000 <debug> index.js:92 (getObjectFromArray) Searching for object with id  3  in a list of  0  objects
+2019-04-19T09:13:13+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:14:07+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:14:07+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:14:10+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:14:13+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:14:14+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:14:16+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:15:23+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:16:17+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:16:22+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:16:22+0000 <debug> user.routes.js:58 (tedious.executeStatement) Finished POST
+2019-04-19T09:16:52+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:16:53+0000 <debug> user.routes.js:58 (tedious.executeStatement) Finished POST
+2019-04-19T09:18:35+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:19:01+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:19:03+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:20:22+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:20:26+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:21:04+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:21:35+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:22:30+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:22:32+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:22:50+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:23:21+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:23:22+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:25:07+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:25:09+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:25:09+0000 <debug> user.routes.js:60 (tedious.executeStatement) Finished POST
+2019-04-19T09:26:26+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:26:28+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:27:28+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:27:30+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:27:30+0000 <debug> user.routes.js:60 (tedious.executeStatement) Finished POST
+2019-04-19T09:28:13+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:28:15+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:28:15+0000 <debug> user.routes.js:60 (tedious.executeStatement) Finished POST
+2019-04-19T09:29:19+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:29:19+0000 <debug> user.routes.js:60 (tedious.executeStatement) Finished POST
+2019-04-19T09:30:01+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:30:15+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:30:15+0000 <debug> user.routes.js:60 (tedious.executeStatement) Finished POST
+2019-04-19T09:30:15+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:31:21+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:31:25+0000 <debug> user.routes.js:46 (app.get) Collected data from MSSQL
+2019-04-19T09:31:25+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:31:36+0000 <debug> user.routes.js:46 (app.get) Collected data from MSSQL
+2019-04-19T09:31:36+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:34:50+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:34:51+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:34:55+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:34:55+0000 <debug> user.routes.js:60 (tedious.executeStatement) Finished POST
+2019-04-19T09:35:08+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:35:12+0000 <debug> user.routes.js:51 (app.post) New User POST
+2019-04-19T09:35:13+0000 <debug> user.routes.js:60 (tedious.executeStatement) Finished POST
+2019-04-19T09:35:13+0000 <log> index.js:99 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:37:28+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:37:31+0000 <debug> user.routes.js:44 (app.get) Collected data from MSSQL
+2019-04-19T09:37:31+0000 <log> index.js:64 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
+2019-04-19T09:38:34+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
+2019-04-19T09:38:51+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
