@@ -16,6 +16,8 @@ module.exports = function movie_app(app) {
             );
         }, () => {
             i.sendJson(req, res, movieObj);
+        }).catch(() => {
+            res.status(400).json('{success: false}');
         });
     });
 
@@ -32,6 +34,8 @@ module.exports = function movie_app(app) {
             ));
         }, () => {
             i.sendJson(req, res, collectedMovies);
+        }).catch(() => {
+            res.status(400).json('{success: false}');
         });
     });
 
@@ -41,6 +45,8 @@ module.exports = function movie_app(app) {
             (columns) => {
             }, () => {
                 i.sendJson(req, res, '{status: success}')
-            });
+            }).catch(() => {
+            res.status(400).json('{success: false}');
+        });
     });
 };

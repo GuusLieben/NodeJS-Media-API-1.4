@@ -19,6 +19,8 @@ module.exports = function user_app(app) {
                 columns[8].value);
         }, () => {
             i.sendJson(req, res, userObj);
+        }).catch(() => {
+            res.status(400).json('{success: false}');
         });
     });
 
@@ -39,7 +41,9 @@ module.exports = function user_app(app) {
                         columns[7].value, // Password
                         columns[8].value)) // Id
             },
-            () => i.sendJson(req, res, collectedUsers));
+            () => i.sendJson(req, res, collectedUsers)).catch(() => {
+            res.status(400).json('{success: false}');
+        });
         executeStatement.then(i.logger.debug('Collected data from MSSQL'))
     });
 
@@ -57,7 +61,9 @@ module.exports = function user_app(app) {
                 tedious.executeStatement(format('select * from Users where email=\'%s\' and phone=\'%s\'', b.email, b.phone), (cols) => {
                     user.id = cols[8].value
                 }, () => i.sendJson(req, res, user));
-            });
+            }).catch(() => {
+            res.status(400).json('{success: false}');
+        });
     });
 };
 
