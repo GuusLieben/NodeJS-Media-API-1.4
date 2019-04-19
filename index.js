@@ -6,7 +6,6 @@ module.exports.store = store;
 const movie_routes = require('./sources/movie.routes');
 const user_routes = require('./sources/user.routes');
 const favicon = require('serve-favicon');
-const tedious = require('./sources/tedious');
 const logger = require('tracer').console({
     transport: function (data) {
         console.log(data.output);

@@ -1,9 +1,8 @@
 const Connection = require('tedious').Connection;
 const Request = require('tedious').Request;
-const TYPES = require('tedious').TYPES;
 const i = require('../index');
 
-var config = {
+const config = {
     server: '192.168.2.21',
     options: {
         database: 'NodeDB'
