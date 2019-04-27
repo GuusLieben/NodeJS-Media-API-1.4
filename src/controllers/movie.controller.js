@@ -1,12 +1,10 @@
-const i = require('../index');
-const tedious = require('../sources/tedious');
+const mssql = require('../business/mssql');
+const i = require('../..');
 
-module.exports = function movie_app(app) {
-
-    // GET handler for specific movie
-    app.get(i.store.movie_single_suffix, (req, res) => {
+module.exports = {
+    getMovieById: (req, res) => {
         let movieObj;
-        tedious.executeStatement('select * from Movies where id=' + req.params.movieId, (columns) => {
+        mssql.executeStatement('select * from Movies where id=' + req.params.movieId, (columns) => {
             movieObj = new i.store.Movie(
                 columns[0].value, // Title
                 columns[1].value, // Description
@@ -19,12 +17,11 @@ module.exports = function movie_app(app) {
         }).catch(() => {
             res.status(400).json('{success: false}');
         });
-    });
+    },
 
-    // GET handler for all movies
-    app.get(i.store.movies_suffix, (req, res) => {
+    getAllMovies: (req, res) => {
         let collectedMovies = [];
-        tedious.executeStatement('select * from Movies', (columns) => {
+        mssql.executeStatement('select * from Movies', (columns) => {
             collectedMovies.push(new i.store.Movie(
                 columns[0].value, // Title
                 columns[1].value, // Description
@@ -37,16 +34,15 @@ module.exports = function movie_app(app) {
         }).catch(() => {
             res.status(400).json('{success: false}');
         });
-    });
+    },
 
-    // DELETE handler for specific movie
-    app.delete(i.store.movie_single_suffix, (req, res) => {
-        tedious.executeStatement('delete from Movies where id=' + req.params.movieId,
+    deleteMovie: (req, res) => {
+        mssql.executeStatement('delete from Movies where id=' + req.params.movieId,
             (columns) => {
             }, () => {
                 i.sendJson(req, res, '{status: success}')
             }).catch(() => {
             res.status(400).json('{success: false}');
         });
-    });
+    }
 };

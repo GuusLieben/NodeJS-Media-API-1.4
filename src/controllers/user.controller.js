@@ -1,12 +1,10 @@
-const i = require('../index');
-const tedious = require('../sources/tedious');
+const i = require('../..');
+const mssql = require('../business/mssql');
 
-module.exports = function user_app(app) {
-
-    // GET handler for specific User
-    app.get(i.store.user_single_suffix, (req, res) => {
+module.exports = {
+    getUserById: (req, res) => {
         let userObj;
-        tedious.executeStatement('select * from Users where id=' + req.params.userId, (columns) => {
+        mssql.executeStatement('select * from Users where id=' + req.params.userId, (columns) => {
             userObj = new i.store.User(
                 columns[0].value, // Name
                 columns[1].value, // Street
@@ -22,12 +20,11 @@ module.exports = function user_app(app) {
         }).catch(() => {
             res.status(400).json('{success: false}');
         });
-    });
+    },
 
-    // GET handler for all users
-    app.get(i.store.user_suffix, (req, res) => {
+    getAllUsers: (req, res) => {
         let collectedUsers = [];
-        let executeStatement = tedious.executeStatement('select * from Users',
+        let executeStatement = mssql.executeStatement('select * from Users',
             (columns) => {
                 collectedUsers.push(
                     new i.store.User(
@@ -45,26 +42,25 @@ module.exports = function user_app(app) {
             res.status(400).json('{success: false}');
         });
         executeStatement.then(i.logger.debug('Collected data from MSSQL'))
-    });
+    },
 
-    // POST handler for new user
-    app.post(i.store.user_suffix, (req, res) => {
+    postUser: (req, res) => {
         i.logger.debug('New User POST');
         const b = req.query;
         let user = new i.store.User(b.name, b.street, b.city, b.postcode, b.birthdate, b.phone, b.email, b.password);
-        tedious.executeStatement(
+        mssql.executeStatement(
             format('insert into Users(name, street, postal_code, city, birthdate, phone, email, password) values (\'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\')', b.name, b.street, b.city, b.postcode, b.birthdate, b.phone, b.email, b.password),
             () => {
                 i.sendJson(req, res, user);
             }, () => {
                 i.logger.debug('Finished POST');
-                tedious.executeStatement(format('select * from Users where email=\'%s\' and phone=\'%s\'', b.email, b.phone), (cols) => {
+                mssql.executeStatement(format('select * from Users where email=\'%s\' and phone=\'%s\'', b.email, b.phone), (cols) => {
                     user.id = cols[8].value
                 }, () => i.sendJson(req, res, user));
             }).catch(() => {
             res.status(400).json('{success: false}');
         });
-    });
+    }
 };
 
 const format = (...args) => args.shift().replace(/%([jsd])/g, x => x === '%j' ? JSON.stringify(args.shift()) : args.shift())

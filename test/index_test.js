@@ -1,5 +1,5 @@
 const assert = require('assert');
-const store = require('../sources/store');
+const store = require('../src/constants');
 
 describe('User', () => {
     describe('new User()', () => {

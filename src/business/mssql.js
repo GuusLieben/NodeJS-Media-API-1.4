@@ -1,6 +1,6 @@
 const Connection = require('tedious').Connection;
 const Request = require('tedious').Request;
-const i = require('../index');
+const i = require('../..');
 
 const config = {
     server: '192.168.2.21',

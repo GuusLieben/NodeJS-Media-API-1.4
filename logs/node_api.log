@@ -393,63 +393,94 @@
 2019-04-19T10:13:48+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
 2019-04-19T10:14:35+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
 2019-04-19T10:14:56+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
-2019-04-19T10:14:56+0000 <debug> tedious.js:21 (Object.executeStatement) Connecting...
-2019-04-19T10:14:56+0000 <debug> tedious.js:24 (Connection.connection.on) Connect state
-2019-04-19T10:14:56+0000 <debug> tedious.js:28 (Connection.connection.on)  == Connected == 
-2019-04-19T10:14:56+0000 <debug> tedious.js:35 (handleStatement) Handling
-2019-04-19T10:14:56+0000 <debug> tedious.js:36 (handleStatement) Statement : select * from Users where id=1
-2019-04-19T10:14:56+0000 <debug> tedious.js:41 (handleStatement) Constructed req
+2019-04-19T10:14:56+0000 <debug> mssql.controller.js:21 (Object.executeStatement) Connecting...
+2019-04-19T10:14:56+0000 <debug> mssql.controller.js:24 (Connection.connection.on) Connect state
+2019-04-19T10:14:56+0000 <debug> mssql.controller.js:28 (Connection.connection.on)  == Connected ==
+2019-04-19T10:14:56+0000 <debug> mssql.controller.js:35 (handleStatement) Handling
+2019-04-19T10:14:56+0000 <debug> mssql.controller.js:36 (handleStatement) Statement : select * from Users where id=1
+2019-04-19T10:14:56+0000 <debug> mssql.controller.js:41 (handleStatement) Constructed req
 2019-04-19T10:14:56+0000 <log> index.js:64 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
-2019-04-19T10:14:58+0000 <debug> tedious.js:21 (Object.executeStatement) Connecting...
-2019-04-19T10:14:58+0000 <debug> tedious.js:24 (Connection.connection.on) Connect state
-2019-04-19T10:14:58+0000 <debug> tedious.js:28 (Connection.connection.on)  == Connected == 
-2019-04-19T10:14:58+0000 <debug> tedious.js:35 (handleStatement) Handling
-2019-04-19T10:14:58+0000 <debug> tedious.js:36 (handleStatement) Statement : select * from Users where id=1
-2019-04-19T10:14:58+0000 <debug> tedious.js:41 (handleStatement) Constructed req
+2019-04-19T10:14:58+0000 <debug> mssql.controller.js:21 (Object.executeStatement) Connecting...
+2019-04-19T10:14:58+0000 <debug> mssql.controller.js:24 (Connection.connection.on) Connect state
+2019-04-19T10:14:58+0000 <debug> mssql.controller.js:28 (Connection.connection.on)  == Connected ==
+2019-04-19T10:14:58+0000 <debug> mssql.controller.js:35 (handleStatement) Handling
+2019-04-19T10:14:58+0000 <debug> mssql.controller.js:36 (handleStatement) Statement : select * from Users where id=1
+2019-04-19T10:14:58+0000 <debug> mssql.controller.js:41 (handleStatement) Constructed req
 2019-04-19T10:14:58+0000 <log> index.js:64 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
 2019-04-19T10:15:12+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
-2019-04-19T10:15:12+0000 <debug> tedious.js:21 (Object.executeStatement) Connecting...
-2019-04-19T10:15:12+0000 <debug> tedious.js:24 (Connection.connection.on) Connect state
-2019-04-19T10:15:12+0000 <debug> tedious.js:28 (Connection.connection.on)  == Connected == 
-2019-04-19T10:15:12+0000 <debug> tedious.js:35 (handleStatement) Handling
-2019-04-19T10:15:12+0000 <debug> tedious.js:36 (handleStatement) Statement : select * from Movies where id=1
-2019-04-19T10:15:12+0000 <debug> tedious.js:41 (handleStatement) Constructed req
-2019-04-19T10:15:12+0000 <debug> tedious.js:44 (Request.request.on) 
+2019-04-19T10:15:12+0000 <debug> mssql.controller.js:21 (Object.executeStatement) Connecting...
+2019-04-19T10:15:12+0000 <debug> mssql.controller.js:24 (Connection.connection.on) Connect state
+2019-04-19T10:15:12+0000 <debug> mssql.controller.js:28 (Connection.connection.on)  == Connected ==
+2019-04-19T10:15:12+0000 <debug> mssql.controller.js:35 (handleStatement) Handling
+2019-04-19T10:15:12+0000 <debug> mssql.controller.js:36 (handleStatement) Statement : select * from Movies where id=1
+2019-04-19T10:15:12+0000 <debug> mssql.controller.js:41 (handleStatement) Constructed req
+2019-04-19T10:15:12+0000 <debug> mssql.controller.js:44 (Request.request.on)
  > New Entry => Executing task
 2019-04-19T10:15:12+0000 <log> index.js:64 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
 2019-04-19T10:16:04+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
-2019-04-19T10:16:05+0000 <debug> tedious.js:21 (Object.executeStatement) Connecting...
-2019-04-19T10:16:06+0000 <debug> tedious.js:24 (Connection.connection.on) Connect state
-2019-04-19T10:16:06+0000 <debug> tedious.js:28 (Connection.connection.on)  == Connected == 
-2019-04-19T10:16:06+0000 <debug> tedious.js:35 (handleStatement) Handling
-2019-04-19T10:16:06+0000 <debug> tedious.js:36 (handleStatement) Statement : select * from Movies where id=1
-2019-04-19T10:16:06+0000 <debug> tedious.js:41 (handleStatement) Constructed req
-2019-04-19T10:16:06+0000 <debug> tedious.js:44 (Request.request.on) 
+2019-04-19T10:16:05+0000 <debug> mssql.controller.js:21 (Object.executeStatement) Connecting...
+2019-04-19T10:16:06+0000 <debug> mssql.controller.js:24 (Connection.connection.on) Connect state
+2019-04-19T10:16:06+0000 <debug> mssql.controller.js:28 (Connection.connection.on)  == Connected ==
+2019-04-19T10:16:06+0000 <debug> mssql.controller.js:35 (handleStatement) Handling
+2019-04-19T10:16:06+0000 <debug> mssql.controller.js:36 (handleStatement) Statement : select * from Movies where id=1
+2019-04-19T10:16:06+0000 <debug> mssql.controller.js:41 (handleStatement) Constructed req
+2019-04-19T10:16:06+0000 <debug> mssql.controller.js:44 (Request.request.on)
  > New Entry => Executing task
 2019-04-19T10:16:06+0000 <log> index.js:64 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
-2019-04-19T10:16:08+0000 <debug> tedious.js:21 (Object.executeStatement) Connecting...
-2019-04-19T10:16:08+0000 <debug> tedious.js:24 (Connection.connection.on) Connect state
-2019-04-19T10:16:08+0000 <debug> tedious.js:28 (Connection.connection.on)  == Connected == 
-2019-04-19T10:16:08+0000 <debug> tedious.js:35 (handleStatement) Handling
-2019-04-19T10:16:08+0000 <debug> tedious.js:36 (handleStatement) Statement : select * from Movies
-2019-04-19T10:16:08+0000 <debug> tedious.js:41 (handleStatement) Constructed req
+2019-04-19T10:16:08+0000 <debug> mssql.controller.js:21 (Object.executeStatement) Connecting...
+2019-04-19T10:16:08+0000 <debug> mssql.controller.js:24 (Connection.connection.on) Connect state
+2019-04-19T10:16:08+0000 <debug> mssql.controller.js:28 (Connection.connection.on)  == Connected ==
+2019-04-19T10:16:08+0000 <debug> mssql.controller.js:35 (handleStatement) Handling
+2019-04-19T10:16:08+0000 <debug> mssql.controller.js:36 (handleStatement) Statement : select * from Movies
+2019-04-19T10:16:08+0000 <debug> mssql.controller.js:41 (handleStatement) Constructed req
 2019-04-19T10:16:22+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
-2019-04-19T10:16:22+0000 <debug> tedious.js:21 (Object.executeStatement) Connecting...
-2019-04-19T10:16:22+0000 <debug> tedious.js:24 (Connection.connection.on) Connect state
-2019-04-19T10:16:22+0000 <debug> tedious.js:28 (Connection.connection.on)  == Connected == 
-2019-04-19T10:16:22+0000 <debug> tedious.js:35 (handleStatement) Handling
-2019-04-19T10:16:22+0000 <debug> tedious.js:36 (handleStatement) Statement : select * from Movies
-2019-04-19T10:16:22+0000 <debug> tedious.js:41 (handleStatement) Constructed req
-2019-04-19T10:16:22+0000 <debug> tedious.js:44 (Request.request.on) 
+2019-04-19T10:16:22+0000 <debug> mssql.controller.js:21 (Object.executeStatement) Connecting...
+2019-04-19T10:16:22+0000 <debug> mssql.controller.js:24 (Connection.connection.on) Connect state
+2019-04-19T10:16:22+0000 <debug> mssql.controller.js:28 (Connection.connection.on)  == Connected ==
+2019-04-19T10:16:22+0000 <debug> mssql.controller.js:35 (handleStatement) Handling
+2019-04-19T10:16:22+0000 <debug> mssql.controller.js:36 (handleStatement) Statement : select * from Movies
+2019-04-19T10:16:22+0000 <debug> mssql.controller.js:41 (handleStatement) Constructed req
+2019-04-19T10:16:22+0000 <debug> mssql.controller.js:44 (Request.request.on)
  > New Entry => Executing task
 2019-04-19T10:16:22+0000 <log> index.js:64 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
 2019-04-19T10:18:11+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
-2019-04-19T10:18:46+0000 <debug> tedious.js:21 (Object.executeStatement) Connecting...
-2019-04-19T10:18:46+0000 <debug> tedious.js:24 (Connection.connection.on) Connect state
-2019-04-19T10:18:46+0000 <debug> tedious.js:28 (Connection.connection.on)  == Connected == 
-2019-04-19T10:18:46+0000 <debug> tedious.js:35 (handleStatement) Handling
-2019-04-19T10:18:46+0000 <debug> tedious.js:36 (handleStatement) Statement : delete from Movies where id=2
-2019-04-19T10:18:46+0000 <debug> tedious.js:41 (handleStatement) Constructed req
+2019-04-19T10:18:46+0000 <debug> mssql.controller.js:21 (Object.executeStatement) Connecting...
+2019-04-19T10:18:46+0000 <debug> mssql.controller.js:24 (Connection.connection.on) Connect state
+2019-04-19T10:18:46+0000 <debug> mssql.controller.js:28 (Connection.connection.on)  == Connected ==
+2019-04-19T10:18:46+0000 <debug> mssql.controller.js:35 (handleStatement) Handling
+2019-04-19T10:18:46+0000 <debug> mssql.controller.js:36 (handleStatement) Statement : delete from Movies where id=2
+2019-04-19T10:18:46+0000 <debug> mssql.controller.js:41 (handleStatement) Constructed req
 2019-04-19T10:18:46+0000 <log> index.js:64 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.129.109.228
 2019-04-19T10:19:26+0000 <log> index.js:27 (Server.app.listen) App successfully started on / on port 82!
 2019-04-19T10:20:18+0000 <log> index.js:26 (Server.app.listen) App successfully started on / on port 82!
+2019-04-24T11:00:51+0000 <log> index.js:26 (Server.app.listen) App successfully started on / on port 82!
+2019-04-24T11:01:28+0000 <log> index.js:26 (Server.app.listen) App successfully started on / on port 82!
+2019-04-24T11:11:55+0000 <log> index.js:26 (Server.app.listen) App successfully started on / on port 82!
+2019-04-24T11:48:28+0000 <log> index.js:26 (Server.app.listen) App successfully started on / on port 82!
+2019-04-24T11:48:43+0000 <log> index.js:26 (Server.app.listen) App successfully started on / on port 82!
+2019-04-24T12:20:58+0000 <log> index.js:26 (Server.app.listen) App successfully started on / on port 82!
+2019-04-24T12:27:37+0000 <log> index.js:24 (Server.app.listen) App successfully started on / on port 82!
+2019-04-25T21:11:03+0000 <log> index.js:24 (Server.app.listen) App successfully started on / on port 82!
+2019-04-26T07:33:53+0000 <log> index.js:24 (Server.app.listen) App successfully started on / on port 82!
+2019-04-26T08:14:07+0000 <log> index.js:24 (Server.app.listen) App successfully started on / on port 82!
+2019-04-26T08:18:17+0000 <log> index.js:24 (Server.app.listen) App successfully started on / on port 82!
+2019-04-26T08:18:54+0000 <log> index.js:24 (Server.app.listen) App successfully started on / on port 82!
+2019-04-26T09:14:04+0000 <debug> mssql.js:20 (Object.executeStatement) Connecting...
+2019-04-26T09:14:04+0000 <debug> mssql.js:23 (Connection.connection.on) Connect state
+2019-04-26T09:14:04+0000 <debug> mssql.js:27 (Connection.connection.on)  == Connected == 
+2019-04-26T09:14:04+0000 <debug> mssql.js:34 (handleStatement) Handling
+2019-04-26T09:14:04+0000 <debug> mssql.js:35 (handleStatement) Statement : select * from Movies
+2019-04-26T09:14:04+0000 <debug> mssql.js:40 (handleStatement) Constructed req
+2019-04-26T09:14:04+0000 <debug> mssql.js:43 (Request.request.on) 
+ > New Entry => Executing task
+2019-04-26T09:14:04+0000 <log> index.js:61 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.49.46.221
+2019-04-26T09:14:07+0000 <debug> mssql.js:20 (Object.executeStatement) Connecting...
+2019-04-26T09:14:07+0000 <debug> user.controller.js:44 (getAllUsers) Collected data from MSSQL
+2019-04-26T09:14:07+0000 <debug> mssql.js:23 (Connection.connection.on) Connect state
+2019-04-26T09:14:07+0000 <debug> mssql.js:27 (Connection.connection.on)  == Connected == 
+2019-04-26T09:14:07+0000 <debug> mssql.js:34 (handleStatement) Handling
+2019-04-26T09:14:07+0000 <debug> mssql.js:35 (handleStatement) Statement : select * from Users
+2019-04-26T09:14:07+0000 <debug> mssql.js:40 (handleStatement) Constructed req
+2019-04-26T09:14:07+0000 <debug> mssql.js:43 (Request.request.on) 
+ > New Entry => Executing task
+2019-04-26T09:14:07+0000 <log> index.js:61 (Object.module.exports.sendJson) Returning to client at  ::ffff:145.49.46.221

@@ -1,19 +1,17 @@
-// Instances of required sources
+// Instances of required src
 const express = require('express');
 const app = express();
-const store = require('./sources/store');
+const store = require('./constants');
 module.exports.store = store;
-const movie_routes = require('./sources/movie.routes');
-const user_routes = require('./sources/user.routes');
+const movie_routes = require('./routes/movie.routes');
+const user_routes = require('./routes/user.routes');
 const favicon = require('serve-favicon');
-const logger = require('tracer').console({
+const logger = require('tracer').colorConsole({
     transport: function (data) {
         console.log(data.output);
         require('fs').appendFile('./logs/node_api.log', data.rawoutput + '\n', (err) => {
-                if (err) throw err;
-            }
-        )
-        ;
+            if (err) throw err;
+        });
     }
 });
 module.exports.logger = logger;
